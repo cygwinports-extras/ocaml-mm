@@ -1,0 +1,12 @@
+--- origsrc/ocaml-mm-0.2.0/src/audio_c.c	2011-10-04 06:48:05.000000000 -0500
++++ src/ocaml-mm-0.2.0/src/audio_c.c	2011-12-16 14:26:19.467340400 -0600
+@@ -39,7 +39,9 @@
+ #include <caml/mlvalues.h>
+ 
+ #include <stdint.h>
++#ifndef __CYGWIN__
+ static inline int16_t bswap_16 (int16_t x) { return ((((x) >> 8) & 0xff) | (((x) & 0xff) << 8)); }
++#endif
+ 
+ #include <assert.h>
+ #include <stdio.h>
