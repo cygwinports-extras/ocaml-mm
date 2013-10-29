@@ -1,0 +1,11 @@
+--- origsrc/ocaml-mm-0.2.1/src/Makefile.in	2013-02-17 17:34:41.000000000 -0600
++++ src/ocaml-mm-0.2.1/src/Makefile.in	2013-10-29 17:00:50.788195800 -0500
+@@ -2,7 +2,7 @@ SOURCES = ringbuffer.mli ringbuffer.ml I
+ image_c.h image_c.c image.mli image.ml video.mli video.ml MIDI.mli MIDI.ml	\
+ synth.mli synth.ml
+ RESULT = mm
+-LIBINSTALL_FILES := *.cm* *.mli *.so *.a
++LIBINSTALL_FILES := *.cm* *.mli *.a -optional *.so
+ OCAMLFLAGS = @OCAMLFLAGS@
+ OCAMLNCFLAGS = @OCAMLNCFLAGS@
+ OCAMLLDFLAGS = -linkall

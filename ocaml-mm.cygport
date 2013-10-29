@@ -1,15 +1,18 @@
 inherit ocaml
 
 NAME="ocaml-mm"
-VERSION=0.2.0
+VERSION=0.2.1
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="OCaml multimedia operations library"
-DESCRIPTION="ocaml-mm is a pure OCaml library dedicated to performing
-operations on multimedia contents."
+DESCRIPTION="ocaml-mm is an OCaml library dedicated to performing operations
+on multimedia contents."
 HOMEPAGE="http://savonet.sourceforge.net/"
 SRC_URI="mirror://sourceforge/savonet/${NAME}-${VERSION}.tar.gz"
-PATCH_URI="0.2.0-cygwin.patch"
+PATCH_URI="
+	0.2.0-cygwin.patch
+	0.2.1-static.patch
+"
 
 DIFF_EXCLUDES="external"
 
