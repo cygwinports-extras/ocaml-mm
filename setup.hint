@@ -1,5 +1,0 @@
-category: OCaml
-requires: ocaml-base
-sdesc: "OCaml multimedia operations library"
-ldesc: "ocaml-mm is a pure OCaml library dedicated to performing 
-operations on multimedia contents."
